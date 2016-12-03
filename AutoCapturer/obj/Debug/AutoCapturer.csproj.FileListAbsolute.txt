@@ -1,0 +1,2 @@
+C:\Users\uutak\AppData\Local\Temporary Projects\AutoCapturer\bin\Debug\AutoCapturer.exe.config
+D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\bin\Debug\AutoCapturer.exe.config
