@@ -27,14 +27,11 @@ namespace AutoCapturer
 
             DragBorder.MouseDown += DragBrder_MD;
             DragBorder.MouseUp += DragBrder_MU;
-            this.KeyDown += Wdw_KD;
-            this.KeyUp += Wdw_KU;
         }
         void DragBrder_MD(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                // this prevents win7 aerosnap
                 if (this.ResizeMode != System.Windows.ResizeMode.NoResize)
                 {
                     this.ResizeMode = System.Windows.ResizeMode.NoResize;
@@ -44,7 +41,6 @@ namespace AutoCapturer
                 DragMove();
                 if (this.ResizeMode == System.Windows.ResizeMode.NoResize)
                 {
-                    // restore resize grips
                     this.ResizeMode = System.Windows.ResizeMode.CanResizeWithGrip;
                     this.UpdateLayout();
                 }
@@ -61,10 +57,9 @@ namespace AutoCapturer
             System.Environment.Exit(0);
         }
 
-
-
-
-
-
+        private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            OpacityFullScr.Opacity = 1 - OpacityFullScr.Value / 100;
+        }
     }
 }

@@ -6,7 +6,6 @@ D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\bin\Debug\Newtonsoft
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\bin\Debug\System.Net.Http.Formatting.dll
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\bin\Debug\Newtonsoft.Json.xml
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\bin\Debug\System.Net.Http.Formatting.xml
-D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\AutoCapturer.csprojResolveAssemblyReference.cache
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\MainWindow.g.cs
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\App.g.cs
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\AutoCapturer_MarkupCompile.cache
@@ -37,3 +36,8 @@ F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\AutoCaptu
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\AutoCapturer.pdb
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\SettingWdw.g.cs
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\SettingWdw.baml
+D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\SettingWdw.g.cs
+D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\SettingWdw.baml
+D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.g.cs
+D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.baml
+D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\GeneratedInternalTypeHelper.g.cs

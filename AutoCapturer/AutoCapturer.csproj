@@ -81,6 +81,9 @@
     <Compile Include="SettingWdw.xaml.cs">
       <DependentUpon>SettingWdw.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ColorThemeButt.xaml.cs">
+      <DependentUpon>ColorThemeButt.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,6 +97,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SettingWdw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ColorThemeButt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,7 +134,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UserControls\" />
+    <Resource Include="Icons\checkedImg.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\Icon.png" />
