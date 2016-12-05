@@ -24,13 +24,38 @@ namespace AutoCapturer
         public SettingWdw()
         {
             InitializeComponent();
-        }
 
-        private void DragBorder_MouseDown(object sender, MouseButtonEventArgs e)
+            DragBorder.MouseDown += DragBrder_MD;
+            DragBorder.MouseUp += DragBrder_MU;
+            this.KeyDown += Wdw_KD;
+            this.KeyUp += Wdw_KU;
+        }
+        void DragBrder_MD(object sender, MouseButtonEventArgs e)
         {
-            this.DragMove();
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                // this prevents win7 aerosnap
+                if (this.ResizeMode != System.Windows.ResizeMode.NoResize)
+                {
+                    this.ResizeMode = System.Windows.ResizeMode.NoResize;
+                    this.UpdateLayout();
+                }
+
+                DragMove();
+                if (this.ResizeMode == System.Windows.ResizeMode.NoResize)
+                {
+                    // restore resize grips
+                    this.ResizeMode = System.Windows.ResizeMode.CanResizeWithGrip;
+                    this.UpdateLayout();
+                }
+            }
         }
 
+        void DragBrder_MU(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+        
         private void CloseBtn_MouseDown(object sender, MouseButtonEventArgs e)
         {
             System.Environment.Exit(0);
