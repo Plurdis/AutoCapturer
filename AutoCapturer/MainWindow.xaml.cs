@@ -27,22 +27,26 @@ namespace AutoCapturer
 
         DoubleAnimation da = new DoubleAnimation();
         DoubleAnimation da2 = new DoubleAnimation();
+        DoubleAnimation OpaAni = new DoubleAnimation();
 
         public MainWindow()
         {
             InitializeComponent();
-
+            this.Topmost = true;
 
 
 
             da.From = -this.Width;
             da2.From = -this.Height;
+            OpaAni.From = 0;
+
+
 
             da.To = 0;
             da2.To = 0;
+            OpaAni.To = 1.0;
 
-
-            da.AccelerationRatio = 1;
+            da.AccelerationRatio = 0;
             da.Duration = new Duration(TimeSpan.FromMilliseconds(800));
             //애니메이션 효과를 적용한 후에는 속성 값을 변경하기
             da.FillBehavior = FillBehavior.Stop;
@@ -52,6 +56,11 @@ namespace AutoCapturer
             //애니메이션 효과를 적용한 후에는 속성 값을 변경하기
             da2.FillBehavior = FillBehavior.Stop;
 
+            OpaAni.AccelerationRatio = 0;
+            OpaAni.Duration = new Duration(TimeSpan.FromMilliseconds(800));
+            //애니메이션 효과를 적용한 후에는 속성 값을 변경하기
+            OpaAni.FillBehavior = FillBehavior.Stop;
+
 
             da.EasingFunction = new CircleEase();
             da2.EasingFunction = new CircleEase();
@@ -59,6 +68,7 @@ namespace AutoCapturer
 
             this.BeginAnimation(Window.LeftProperty, da);
             this.BeginAnimation(Window.TopProperty, da2);
+            this.BeginAnimation(Window.OpacityProperty, OpaAni);
 
 
 
@@ -102,28 +112,55 @@ namespace AutoCapturer
 
         private void BtnEnAutoSave_Click(object sender, RoutedEventArgs e)
         {
+            OpaAni.Duration = new Duration(TimeSpan.FromMilliseconds(500));
+
+
             da.To = -this.Width;
             da2.To = -this.Height;
+            OpaAni.To = 0;
 
             da.From = 0;
             da2.From = 0;
+            OpaAni.From = 1.0;
 
             da.AccelerationRatio = 1;
             da2.AccelerationRatio = 1;
+            OpaAni.AccelerationRatio = 1;
 
             this.BeginAnimation(Window.LeftProperty, da);
             this.BeginAnimation(Window.TopProperty, da2);
+            this.BeginAnimation(Window.OpacityProperty, OpaAni);
         }
 
+        int counter = 0;
         private void BtnAllCapture_Click(object sender, RoutedEventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"POP.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer($"snd{++counter}.wav");
             player.Play();
+            if (counter == 3) counter = 0;
         }
 
         private void BtnSelCapture_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer($"snd1.wav");
+            player.Play();
+        }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer($"snd2.wav");
+            player.Play();
+        }
+
+        private void button_Copy1_Click(object sender, RoutedEventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer($"snd3.wav");
+            player.Play();
         }
     }
 }

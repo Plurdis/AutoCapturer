@@ -26,10 +26,14 @@
         <TabControl x:Name="tabControl" Margin="10,51,10,10">
             <TabItem Header="캡처 설정">
                 <Grid Background="#FFE5E5E5">
+                    <Image x:Name="image" HorizontalAlignment="Left" Height="22" Margin="147,68,0,0" VerticalAlignment="Top" Width="22" Source="Icons/ImgSound.png"/>
                     <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="15,17,0,0" TextWrapping="Wrap" Text="자동 캡쳐 저장 시작 알림 방법" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="radioButton2" Content="알림 없음 (권장하지 않음)" HorizontalAlignment="Left" Margin="29,90,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="radioButton2" Content="알림 없음 (권장하지 않음)" HorizontalAlignment="Left" Margin="29,225,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="radioButton2_Copy" Content="소리 재생" HorizontalAlignment="Left" Margin="29,48,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="radioButton2_Copy1" Content="팝업으로 띄우기" HorizontalAlignment="Left" Margin="29,69,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="radioButton2_Copy1" Content="팝업으로 띄우기" HorizontalAlignment="Left" Margin="29,116,0,0" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="49,71,0,0" TextWrapping="Wrap" Text="자동 캡쳐 활성화" VerticalAlignment="Top"/>
+                    <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="22" Margin="303,68,0,0" VerticalAlignment="Top" Width="22" Source="Icons/ImgSound.png"/>
+                    <TextBlock x:Name="textBlock7_Copy" HorizontalAlignment="Left" Margin="193,71,0,0" TextWrapping="Wrap" Text="자동 캡쳐 비활성화" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
             <TabItem Header="패턴 관리">
@@ -54,6 +58,7 @@
                     <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="색 설정" VerticalAlignment="Top" Margin="10,10,0,0"/>
                     <UserControls:ColorThemeButt HorizontalAlignment="Left" Margin="157,51,0,0" VerticalAlignment="Top" WdwInner="#FFEDF1F9" WdwSurface="#FFAAA4E4" ThemeName="하늘빛 테마"/>
                     <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="화면 표시 위치" VerticalAlignment="Top" Margin="10,193,0,0"/>
+                    <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="108" Stroke="Black" VerticalAlignment="Top" Width="192" Margin="22,232,0,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="로고 설정">
@@ -91,10 +96,10 @@
                 </Grid>
             </TabItem>
             <TabItem Header="효과 설정">
-                
+
             </TabItem>
         </TabControl>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="108" Stroke="Black" VerticalAlignment="Top" Width="192" Margin="37,361,0,0"/>
+
 
 
     </Grid>

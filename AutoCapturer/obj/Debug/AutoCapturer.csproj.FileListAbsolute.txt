@@ -23,7 +23,6 @@ F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\bin\Debug\Newtonsof
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\bin\Debug\System.Net.Http.Formatting.dll
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\bin\Debug\Newtonsoft.Json.xml
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\bin\Debug\System.Net.Http.Formatting.xml
-F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\AutoCapturer.csprojResolveAssemblyReference.cache
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\MainWindow.g.cs
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\App.g.cs
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\AutoCapturer_MarkupCompile.cache
@@ -44,3 +43,5 @@ D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\GeneratedI
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.g.cs
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\GeneratedInternalTypeHelper.g.cs
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.baml
+F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\CornerSelecter.g.cs
+F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\CornerSelecter.baml
