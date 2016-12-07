@@ -53,6 +53,7 @@
                     <UserControls:ColorThemeButt HorizontalAlignment="Left" Margin="32,51,0,0" VerticalAlignment="Top"/>
                     <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="색 설정" VerticalAlignment="Top" Margin="10,10,0,0"/>
                     <UserControls:ColorThemeButt HorizontalAlignment="Left" Margin="157,51,0,0" VerticalAlignment="Top" WdwInner="#FFEDF1F9" WdwSurface="#FFAAA4E4" ThemeName="하늘빛 테마"/>
+                    <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="화면 표시 위치" VerticalAlignment="Top" Margin="10,193,0,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="로고 설정">
@@ -89,7 +90,11 @@
                     </Grid>
                 </Grid>
             </TabItem>
+            <TabItem Header="효과 설정">
+                
+            </TabItem>
         </TabControl>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="108" Stroke="Black" VerticalAlignment="Top" Width="192" Margin="37,361,0,0"/>
 
 
     </Grid>

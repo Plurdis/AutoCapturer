@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Formatting;
+using System.Windows.Media.Animation;
 
 namespace AutoCapturer
 {
@@ -23,25 +24,62 @@ namespace AutoCapturer
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        DoubleAnimation da = new DoubleAnimation();
+        DoubleAnimation da2 = new DoubleAnimation();
+
         public MainWindow()
         {
             InitializeComponent();
 
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:52899/");
-            
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
 
 
-            //TODO : 이 부분에 발생한 오류 처리
-            var str = new string[] { "uutak2000", "uutkk" };
+            da.From = -this.Width;
+            da2.From = -this.Height;
 
-            MediaTypeFormatter frmter = new JsonMediaTypeFormatter();
+            da.To = 0;
+            da2.To = 0;
 
-            HttpContent cont = new ObjectContent<string[]>(str, frmter);
 
-            var resp = client.PostAsync("api/world/Create", cont).Result;
+            da.AccelerationRatio = 1;
+            da.Duration = new Duration(TimeSpan.FromMilliseconds(800));
+            //애니메이션 효과를 적용한 후에는 속성 값을 변경하기
+            da.FillBehavior = FillBehavior.Stop;
+
+            da2.AccelerationRatio = 0;
+            da2.Duration = new Duration(TimeSpan.FromMilliseconds(800));
+            //애니메이션 효과를 적용한 후에는 속성 값을 변경하기
+            da2.FillBehavior = FillBehavior.Stop;
+
+
+            da.EasingFunction = new CircleEase();
+            da2.EasingFunction = new CircleEase();
+
+
+            this.BeginAnimation(Window.LeftProperty, da);
+            this.BeginAnimation(Window.TopProperty, da2);
+
+
+
+
+
+
+            //HttpClient client = new HttpClient();
+            //client.BaseAddress = new Uri("http://localhost:52899/");
+
+            //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+
+            ////TODO : 이 부분에 발생한 오류 처리
+            //var str = new string[] { "uutak2000", "uutkk" };
+
+            //MediaTypeFormatter frmter = new JsonMediaTypeFormatter();
+
+            //HttpContent cont = new ObjectContent<string[]>(str, frmter);
+
+            //var resp = client.PostAsync("api/world/Create", cont).Result;
 
 
 
@@ -59,6 +97,32 @@ namespace AutoCapturer
             //    MessageBox.Show($"{(int)response.StatusCode} ({response.ReasonPhrase})");
             //}
 
+
+        }
+
+        private void BtnEnAutoSave_Click(object sender, RoutedEventArgs e)
+        {
+            da.To = -this.Width;
+            da2.To = -this.Height;
+
+            da.From = 0;
+            da2.From = 0;
+
+            da.AccelerationRatio = 1;
+            da2.AccelerationRatio = 1;
+
+            this.BeginAnimation(Window.LeftProperty, da);
+            this.BeginAnimation(Window.TopProperty, da2);
+        }
+
+        private void BtnAllCapture_Click(object sender, RoutedEventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"POP.wav");
+            player.Play();
+        }
+
+        private void BtnSelCapture_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

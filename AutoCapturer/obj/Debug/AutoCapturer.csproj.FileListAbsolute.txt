@@ -41,3 +41,6 @@ D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\SettingWdw
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.g.cs
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.baml
 D:\YT's Files\C# Files\C# Project\AutoCapturer\AutoCapturer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.g.cs
+F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.baml
