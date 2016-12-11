@@ -45,3 +45,4 @@ F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\Generated
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\UserControls\ColorThemeButt.baml
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\CornerSelecter.g.cs
 F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\CornerSelecter.baml
+F:\장유탁 파일\Github Project\AutoCapturer\AutoCapturer\obj\Debug\AutoCapturer.csprojResolveAssemblyReference.cache

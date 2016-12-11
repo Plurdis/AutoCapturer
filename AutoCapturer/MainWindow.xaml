@@ -20,6 +20,5 @@
         <Button x:Name="button" Content="1" HorizontalAlignment="Left" Margin="105,49,0,0" VerticalAlignment="Top" Width="36" Height="32" Click="button_Click"/>
         <Button x:Name="button_Copy" Content="2" HorizontalAlignment="Left" Margin="141,49,0,0" VerticalAlignment="Top" Width="36" Height="32" Click="button_Copy_Click"/>
         <Button x:Name="button_Copy1" Content="3" HorizontalAlignment="Left" Margin="177,49,0,0" VerticalAlignment="Top" Width="36" Height="32" Click="button_Copy1_Click"/>
-        <local:CornerSelecter HorizontalAlignment="Left" Margin="30,-4,0,-6" VerticalAlignment="Top" Height="110" Width="194"/>
     </Grid>
 </Window>

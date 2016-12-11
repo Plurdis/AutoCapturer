@@ -29,6 +29,9 @@ namespace AutoCapturer
         DoubleAnimation da2 = new DoubleAnimation();
         DoubleAnimation OpaAni = new DoubleAnimation();
 
+        SettingWdw sw = new SettingWdw();
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -135,9 +138,10 @@ namespace AutoCapturer
         int counter = 0;
         private void BtnAllCapture_Click(object sender, RoutedEventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer($"snd{++counter}.wav");
-            player.Play();
-            if (counter == 3) counter = 0;
+            sw.ShowDialog();   
+            //System.Media.SoundPlayer player = new System.Media.SoundPlayer($"snd{++counter}.wav");
+            //player.Play();
+            //if (counter == 3) counter = 0;
         }
 
         private void BtnSelCapture_Click(object sender, RoutedEventArgs e)
