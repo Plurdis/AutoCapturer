@@ -81,6 +81,8 @@
     <Compile Include="CornerSelecter.xaml.cs">
       <DependentUpon>CornerSelecter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Effectors\BaseEffector.cs" />
+    <Compile Include="Effectors\RotateEffector.cs" />
     <Compile Include="SettingWdw.xaml.cs">
       <DependentUpon>SettingWdw.xaml</DependentUpon>
     </Compile>

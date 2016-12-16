@@ -16,6 +16,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Formatting;
 using System.Windows.Media.Animation;
+using System.IO;
 
 namespace AutoCapturer
 {
@@ -138,7 +139,17 @@ namespace AutoCapturer
         int counter = 0;
         private void BtnAllCapture_Click(object sender, RoutedEventArgs e)
         {
-            sw.ShowDialog();   
+            //sw.ShowDialog();
+            Effectors.BaseEffector RtEff = new Effectors.RotateEffector();
+
+            RtEff.Source = new BitmapImage(new Uri(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "\\시험 일정표.jpg"));
+
+            
+            BitmapEncoder encoder = new PngBitmapEncoder();
+            encoder.Frames.Add(BitmapFrame.Create(RtEff.ApplyEffect()));
+            using (var filestream = new FileStream(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "\\Rotate Test.jpg", FileMode.Create)){
+                encoder.Save(filestream);
+            }
             //System.Media.SoundPlayer player = new System.Media.SoundPlayer($"snd{++counter}.wav");
             //player.Play();
             //if (counter == 3) counter = 0;
